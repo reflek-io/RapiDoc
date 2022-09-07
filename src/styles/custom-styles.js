@@ -8,9 +8,55 @@ customize their theme. Simply add your css to this file and yarn build.
 export default css`
   :host {
     --border-radius: 4px;
+    --bg: #21272a;
+    --bg2: #1c2225;
+    --bg3: #12181b;
+    --light-bg: #000000;
+    --fg: #fff;
+    --fg2: #ffffff;
+    --fg3: #ffffff;
+    --light-fg: #ffffff;
+    --selection-bg: #444;
+    --selection-fg: #eee;
+    --overlay-bg: rgba(0, 0, 0, 0.4);
     --border-color: rgba(255, 255, 255, 0.12);
     --light-border-color: rgba(255, 255, 255, 0.12);
+    --code-border-color: transparent;
+    --input-bg: #2b3134;
+    --placeholder-color: #ffffff;
     --hover-color: rgba(255, 255, 255, 0.05);
+    --red: #f06560;
+    --light-red: #fff0f0;
+    --pink: #990055;
+    --light-pink: #ffb2b2;
+    --green: #690;
+    --light-green: #fbfff0;
+    --blue: #47afe8;
+    --light-blue: #eff8fd;
+    --orange: #ff9900;
+    --light-orange: #fff5e6;
+    --yellow: #827717;
+    --light-yellow: #fff5cc;
+    --purple: #786ff1;
+    --brown: #d4ac0d;
+    --header-bg: #fff;
+    --header-fg: #000;
+    --header-color-darker: #ebebeb;
+    --header-color-border: #ffffff;
+    --nav-bg-color: #21272a;
+    --nav-text-color: #a2a9b0;
+    --nav-hover-bg-color: #21272a;
+    --nav-hover-text-color: #f8f9fc;
+    --nav-accent-color: #fff;
+    --primary-color: #dde1e6;
+    --primary-color-invert: #000;
+    --primary-color-trans: rgba(221, 225, 230, 0.8);
+    --code-bg: rgba(18, 24, 27, 0.7);
+    --code-fg: #666;
+    --inline-code-fg: brown;
+    --code-property-color: #905;
+    --code-keyword-color: #07a;
+    --code-operator-color: #9a6e3a;
   }
 
   /* nav button */
