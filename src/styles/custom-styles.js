@@ -224,4 +224,37 @@ export default css`
     padding: 8px 16px;
     color: var(--fg);
   }
+
+  *::-webkit-scrollbar {
+    background-color: transparent !important;
+    width: 12px !important;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: transparent !important;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border-radius: 10px !important;
+    border: 3px solid transparent !important;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border: 3px solid transparent !important;
+  }
+
+  *::-webkit-scrollbar-button {
+    display: none !important;
+  }
+
+  .nav-scroll {
+    width: unset;
+  }
 `;
