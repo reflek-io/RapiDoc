@@ -1,4 +1,4 @@
-import { css } from "lit-element";
+import { css } from 'lit-element';
 
 export default css`
   .nav-bar {
@@ -49,7 +49,7 @@ export default css`
     display: none;
   }
   .nav-bar.focused .nav-bar-tag-and-paths.collapsed .nav-bar-tag-icon::after {
-    content: "⌵";
+    content: '⌵';
     width: 16px;
     height: 16px;
     text-align: center;
@@ -57,7 +57,7 @@ export default css`
     transform: rotate(270deg);
   }
   .nav-bar.focused .nav-bar-tag-and-paths.expanded .nav-bar-tag-icon::after {
-    content: "⌵";
+    content: '⌵';
     width: 16px;
     height: 16px;
     text-align: center;

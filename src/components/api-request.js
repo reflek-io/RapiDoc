@@ -299,8 +299,8 @@ export default class ApiRequest extends LitElement {
           || nestExampleIfPresent(mimeTypeElem?.example)
           || mimeTypeElem?.examples
           || paramSchema.examples
-          || nestExampleIfPresent(paramSchema.example)
-        ),
+          || paramSchema.default ? { Example: { value: paramSchema.default } } : paramSchema.default
+          || nestExampleIfPresent(paramSchema.example)),
         paramSchema.type,
       );
       if (!example.exampleVal && paramSchema.type === 'object') {
@@ -407,7 +407,6 @@ export default class ApiRequest extends LitElement {
           ${paramSchema.default || paramSchema.constrain || paramSchema.allowedValues || paramSchema.pattern
             ? html`
               <div class="param-constraint">
-                ${paramSchema.default ? html`<span style="font-weight:bold">Default: </span>${paramSchema.default}<br/>` : ''}
                 ${paramSchema.pattern ? html`<span style="font-weight:bold">Pattern: </span>${paramSchema.pattern}<br/>` : ''}
                 ${paramSchema.constrain ? html`${paramSchema.constrain}<br/>` : ''}
                 ${paramSchema.allowedValues && paramSchema.allowedValues.split('┃').map((v, i) => html`

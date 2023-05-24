@@ -12,11 +12,11 @@ import '~/components/api-response';
 function headingRenderer(tagElementId) {
   const renderer = new marked.Renderer();
   renderer.heading = ((text, level, raw, slugger) => {
-    let rest = `--${slugger.slug(raw)}`
-    if (rest == "--overview") {
-      rest = ""
+    let rest = `--${slugger.slug(raw)}`;
+    if (rest === '--overview') {
+      rest = '';
     }
-    return `<h${level} class="observe-me" id="${tagElementId}${rest}">${text}</h${level}>`
+    return `<h${level} class="observe-me" id="${tagElementId}${rest}">${text}</h${level}>`;
   });
   return renderer;
 }
