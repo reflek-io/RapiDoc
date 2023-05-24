@@ -31,10 +31,6 @@ function onExpandCollapse(e) {
   expandCollapseNavBarTag(e.target, 'toggle');
 }
 
-function onExpandCollapseAll(e, action = 'expand-all') {
-  expandCollapseAll(e.target.closest('.nav-scroll'), action);
-}
-
 /* eslint-disable indent */
 export default function navbarTemplate() {
   if (!this.resolvedSpec || this.resolvedSpec.specLoadError) {
