@@ -84,7 +84,8 @@ export default css`
     font-size: 15px;
     line-height: 20px;
     text-transform: none !important;
-    font-family: "FuturaPTWebMedium";
+    font-family: "FuturaPT";
+    font-weight: 500;
     margin-top: 16px;
     padding-bottom: 8px;
     cursor: auto !important;
@@ -119,7 +120,8 @@ export default css`
     font-size: 36px;
     line-height: 48px;
     text-transform: none;
-    font-family: "FuturaPTWebMedium";
+    font-family: "FuturaPT";
+    font-weight: 500;
     color: var(--header-fg);
   }
 
@@ -128,7 +130,8 @@ export default css`
     padding: 0;
     font-size: 28px;
     line-height: 40px;
-    font-family: "FuturaPTWebMedium";
+    font-family: "FuturaPT";
+    font-weight: 500;
     color: var(--header-fg);
   }
 
@@ -137,7 +140,8 @@ export default css`
     letter-spacing: 0.025em;
     font-size: 28px;
     line-height: 40px;
-    font-family: "FuturaPTWebMedium";
+    font-family: "FuturaPT";
+    font-weight: 500;
     color: var(--header-fg);
   }
 
