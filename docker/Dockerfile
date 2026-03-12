@@ -29,7 +29,7 @@ COPY . .
 RUN npm run build
 
 # production stage
-FROM nginx:stable-alpine as production-stage
+FROM nginx:1.29.5-alpine3.23 as production-stage
 COPY --from=build-stage /app/dist /app
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 
